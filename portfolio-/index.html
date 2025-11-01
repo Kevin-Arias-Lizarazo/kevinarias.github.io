@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Welinton Suarez</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importar fuente Poppins desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>Welinton Suarez</h1>
+                <ul>
+                    <li><a href="#presentacion">Inicio</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Presentación -->
+    <section id="presentacion" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Hola, soy Welinton Suarez</h2>
+                <p>Ingeniero de Sistemas apasionado por la tecnología y el desarrollo de soluciones innovadoras.</p>
+                <p>Especializado en desarrollo web full stack, con experiencia en proyectos de software y análisis de sistemas.</p>
+            </div>
+            <div class="hero-image">
+                <!-- Foto de perfil desde Cloudinary -->
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Foto de perfil de Kevin arias">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia -->
+    <section id="experiencia" class="experiencia">
+        <div class="container">
+            <h2>Experiencia</h2>
+            <div class="experiencia-content">
+                <div class="experiencia-lista">
+                    <h3>Experiencias Laborales</h3>
+                    <ul>
+                        <li><strong>Desarrollador Full Stack</strong> - Empresa Tech Solutions (2022 - Presente)<br>Desarrollo de aplicaciones web usando React y Node.js.</li>
+                        <li><strong>Analista de Sistemas</strong> - Consultora IT Global (2020 - 2022)<br>Análisis y diseño de sistemas informáticos para clientes corporativos.</li>
+                        <li><strong>Practicante en Desarrollo</strong> - Startup Innovadora (2019 - 2020)<br>Colaboración en proyectos de software y aprendizaje de tecnologías emergentes.</li>
+                    </ul>
+                </div>
+                <div class="habilidades">
+                    <h3>Habilidades Destacadas</h3>
+                    <div class="skills-grid">
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">SQL</span>
+                        <span class="skill">Git</span>
+                        <span class="skill">Docker</span>
+                        <span class="skill">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="proyectos-grid">
+                <div class="proyecto-card">
+                    <img src="https://picsum.photos/400/250?random=1" alt="Proyecto 1">
+                    <h3>E-commerce Platform</h3>
+                    <p>Plataforma de comercio electrónico desarrollada con MERN stack, incluyendo carrito de compras y pagos integrados.</p>
+                    <button class="btn-primary">Ver más</button>
+                </div>
+                <div class="proyecto-card">
+                    <img src="https://picsum.photos/400/250?random=2" alt="Proyecto 2">
+                    <h3>Task Management App</h3>
+                    <p>Aplicación web para gestión de tareas con funcionalidades de colaboración en tiempo real.</p>
+                    <button class="btn-primary">Ver más</button>
+                </div>
+                <div class="proyecto-card">
+                    <img src="https://picsum.photos/400/250?random=3" alt="Proyecto 3">
+                    <h3>Data Analytics Dashboard</h3>
+                    <p>Dashboard interactivo para visualización de datos usando D3.js y Python para el backend.</p>
+                    <button class="btn-primary">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contacto-content">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+                <div class="redes-sociales">
+                    <h3>Sígueme en Redes Sociales</h3>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">X (Twitter)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Welinton Suarez – Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
