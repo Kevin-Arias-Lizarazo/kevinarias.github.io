@@ -8,13 +8,16 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #f8fafc; /* Texto principal */
-    background-color: #0f172a; /* Fondo oscuro */
+    color: #f8fafc;
+    /* Texto principal */
+    background-color: #0f172a;
+    /* Fondo oscuro */
 }
 
 /* Header y navegación */
 header {
-    background-color: #1e293b; /* Fondo del header */
+    background-color: #1e293b;
+    /* Fondo del header */
     position: fixed;
     width: 100%;
     top: 0;
@@ -32,7 +35,8 @@ header {
 }
 
 nav h1 {
-    color: #38bdf8; /* Color primario celeste */
+    color: #38bdf8;
+    /* Color primario celeste */
 }
 
 nav ul {
@@ -52,7 +56,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #38bdf8; /* Hover en enlaces */
+    color: #38bdf8;
+    /* Hover en enlaces */
 }
 
 /* Sección Hero (Presentación) */
@@ -119,7 +124,8 @@ nav ul li a:hover {
 
 .experiencia-lista h3,
 .habilidades h3 {
-    color: #f97316; /* Color secundario naranja */
+    color: #f97316;
+    /* Color secundario naranja */
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -154,6 +160,85 @@ nav ul li a:hover {
     text-align: center;
     font-weight: 600;
     box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+/* Sección Habilidades */
+.habilidades {
+    padding: 4rem 2rem;
+    background-color: #0f172a;
+}
+
+.habilidades h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #38bdf8;
+    font-size: 2.5rem;
+}
+
+.habilidades-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.hard-skills h3,
+.soft-skills h3 {
+    color: #f97316;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.hard-skills p,
+.soft-skills p {
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+}
+
+.skills-table th {
+    background-color: #334155;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.skills-table td {
+    color: #cbd5e1;
+}
+
+.skills-table tr:hover {
+    background-color: #334155;
+}
+
+.soft-skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.soft-skills li {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #334155;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.soft-skills strong {
+    color: #38bdf8;
 }
 
 /* Sección Proyectos */
@@ -325,6 +410,7 @@ footer {
     }
 
     .experiencia-content,
+    .habilidades-content,
     .contacto-content {
         grid-template-columns: 1fr;
         gap: 2rem;
