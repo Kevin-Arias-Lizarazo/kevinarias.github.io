@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inicio — Proyectos</title>
+  <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+  <main class="wrap">
+   <style> :root{
+  --bg:#0b1220;
+  --card:#0f1724;
+  --accent:#38bdf8;
+  --muted:#9fb3c8;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+body{background:linear-gradient(180deg,#061226 0%,#071826 100%);color:#eaf6ff;display:flex;align-items:center;justify-content:center;padding:32px}
+.wrap{width:100%;max-width:1100px}
+header{display:flex;flex-direction:column;gap:6px;margin-bottom:20px}
+h1{color:var(--accent);margin:0;font-size:1.6rem}
+.lead{color:var(--muted);margin:0;font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{display:flex;gap:14px;align-items:center;padding:16px;border-radius:12px;background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.01));border:1px solid var(--glass);text-decoration:none;color:inherit;transition:transform .13s,box-shadow .13s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(2,6,23,0.6)}
+.icon{width:64px;height:64px;border-radius:10px;padding:10px;background:linear-gradient(135deg,var(--accent),#ffb86b);display:block}
+h2{margin:0;font-size:1.02rem}
+.muted{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+footer{margin-top:18px;color:var(--muted);text-align:center;font-size:.9rem}
+
+/* Responsive */
+@media (max-width:520px){
+  .icon{width:52px;height:52px}
+  .grid{gap:12px}
+}</style>
+    <header>
+      <h1>Proyectos</h1>
+      <p class="lead">Selecciona un proyecto para abrirlo (rutas relativas, listo para GitHub Pages).</p>
+    </header>
+
+    <section class="grid" role="list">
+      <a class="card" role="listitem" href="chess-chatbot/index.html" title="Abrir Chess Chatbot">
+        <img class="icon" src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Imagen ajedrez">
+        <div>
+          <h2>Chess Chatbot</h2>
+          <p class="muted">chess-chatbot/index.html — Chat / recursos de ajedrez</p>
+        </div>
+      </a>
+
+      <a class="card" role="listitem" href="portfolio-/index.html" title="Abrir Portafolio">
+        <img class="icon" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Imagen portafolio">
+        <div>
+          <h2>Portafolio</h2>
+          <p class="muted">portfolio-/index.html — Sitio personal / contacto</p>
+        </div>
+      </a>
+
+      <a class="card" role="listitem" href="snake/snake-game.html" title="Abrir Snake">
+        <img class="icon" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Imagen snake">
+        <div>
+          <h2>Snake</h2>
+          <p class="muted">snake/snake-game.html — Juego clásico</p>
+        </div>
+      </a>
+
+      <a class="card" role="listitem" href="talentotech-clone/index.html" title="Abrir Talento Tech (clone)">
+        <img class="icon" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Imagen talento tech">
+        <div>
+          <h2>Talento Tech (clone)</h2>
+          <p class="muted">talentotech-clone/index.html — Landing informativa</p>
+        </div>
+      </a>
+    </section>
+
+    <footer>Listo para GitHub Pages — los enlaces usan rutas relativas.</footer>
+  </main>
+</body>
+</html>
